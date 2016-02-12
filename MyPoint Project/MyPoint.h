@@ -14,6 +14,8 @@
 }
 -(void)setX: (double) x;
 -(void)setY: (double) y;
+-(double)getX: (double) x;
+-(double)getY: (double) y;
 -(double)moveAlongX: (double) shiftX;
 -(double)moveAlongY: (double) shiftY;
 

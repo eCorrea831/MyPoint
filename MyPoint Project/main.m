@@ -12,10 +12,15 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        MyPoint *p1;
-        p1 = [MyPoint alloc];
-        MyPoint *p2;
-        p2 = [MyPoint alloc];
+        MyPoint *p1 = [[MyPoint alloc] init];
+        MyPoint *p2 = [[MyPoint alloc] init];
+        
+        [p1 setX: 2];
+        [p1 setY: 2];
+        [p2 setX: 5];
+        [p2 setY: 2];
+        
+        
         
     }
     return 0;

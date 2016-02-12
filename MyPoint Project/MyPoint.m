@@ -15,6 +15,12 @@
 -(void)setY: (double) y {
     _y = y;
 }
+-(double)getX: (double) x {
+    return _x;
+}
+-(double)getY: (double) y {
+    return _y;
+}
 
 -(double)moveAlongX: (double) shiftX {
     _x = _x + shiftX;
