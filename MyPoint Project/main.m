@@ -13,7 +13,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         MyPoint *p1;
+        p1 = [MyPoint alloc];
         MyPoint *p2;
+        p2 = [MyPoint alloc];
         
     }
     return 0;
