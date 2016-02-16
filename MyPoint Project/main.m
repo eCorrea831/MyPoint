@@ -20,6 +20,7 @@ int main(int argc, const char * argv[]) {
         [p2 setX: 5];
         [p2 setY: 2];
         
+        NSLog(@"Point 1 is now at (%f, %f)", [p1 moveAlongX: 2], [p1 moveAlongY: 2]);
         
         
     }
