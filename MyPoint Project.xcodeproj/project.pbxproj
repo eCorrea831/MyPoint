@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7B744CF01C6E5AEA0073CDCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B744CEF1C6E5AEA0073CDCB /* main.m */; };
 		7B744CF81C6E5B100073CDCB /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B744CF71C6E5B100073CDCB /* MyPoint.m */; };
+		7BC8C4121C7E13A700EDDFAA /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8C4111C7E13A700EDDFAA /* Rectangle.m */; };
+		7BC8C4161C7E1DFF00EDDFAA /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8C4151C7E1DFF00EDDFAA /* Square.m */; };
+		7BC8C4191C7E1E0700EDDFAA /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8C4181C7E1E0700EDDFAA /* Circle.m */; };
+		7BEC48511C778571002EFA4B /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC48501C778571002EFA4B /* Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,17 @@
 		7B744CEF1C6E5AEA0073CDCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B744CF61C6E5B100073CDCB /* MyPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPoint.h; sourceTree = "<group>"; };
 		7B744CF71C6E5B100073CDCB /* MyPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPoint.m; sourceTree = "<group>"; };
+		7B8D838E1C7D07E800A5E9F6 /* AbstractPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPoint.h; sourceTree = "<group>"; };
+		7BC8C40C1C7E114000EDDFAA /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		7BC8C4101C7E13A700EDDFAA /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		7BC8C4111C7E13A700EDDFAA /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		7BC8C4141C7E1DFF00EDDFAA /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		7BC8C4151C7E1DFF00EDDFAA /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		7BC8C4171C7E1E0700EDDFAA /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		7BC8C4181C7E1E0700EDDFAA /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		7BCDE1C71C7F882D004D3D5E /* Quadrilateral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quadrilateral.h; sourceTree = "<group>"; };
+		7BEC484F1C778571002EFA4B /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = ../Utilities.h; sourceTree = "<group>"; };
+		7BEC48501C778571002EFA4B /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = ../Utilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +75,78 @@
 		7B744CEE1C6E5AEA0073CDCB /* MyPoint Project */ = {
 			isa = PBXGroup;
 			children = (
-				7B744CEF1C6E5AEA0073CDCB /* main.m */,
+				7BC8C41B1C7E1E2900EDDFAA /* Circle Class */,
+				7BC8C4171C7E1E0700EDDFAA /* Circle.h */,
+				7BC8C4181C7E1E0700EDDFAA /* Circle.m */,
+				7BC8C4131C7E13B700EDDFAA /* Rectangle Class */,
+				7BC8C4101C7E13A700EDDFAA /* Rectangle.h */,
+				7BC8C4111C7E13A700EDDFAA /* Rectangle.m */,
+				7BC8C41A1C7E1E0D00EDDFAA /* Square Class */,
+				7BC8C4141C7E1DFF00EDDFAA /* Square.h */,
+				7BC8C4151C7E1DFF00EDDFAA /* Square.m */,
+				7B8D838D1C7CD58E00A5E9F6 /* MyPoint Class */,
 				7B744CF61C6E5B100073CDCB /* MyPoint.h */,
 				7B744CF71C6E5B100073CDCB /* MyPoint.m */,
+				7B8D838C1C7CD57E00A5E9F6 /* Utilities Class */,
+				7BEC484F1C778571002EFA4B /* Utilities.h */,
+				7BEC48501C778571002EFA4B /* Utilities.m */,
+				7BC8C40F1C7E114500EDDFAA /* Shape Protocols */,
+				7B8D838F1C7D07EF00A5E9F6 /* AbstractPoint Protocol */,
+				7B744CEF1C6E5AEA0073CDCB /* main.m */,
 			);
 			path = "MyPoint Project";
+			sourceTree = "<group>";
+		};
+		7B8D838C1C7CD57E00A5E9F6 /* Utilities Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Utilities Class";
+			sourceTree = "<group>";
+		};
+		7B8D838D1C7CD58E00A5E9F6 /* MyPoint Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "MyPoint Class";
+			sourceTree = "<group>";
+		};
+		7B8D838F1C7D07EF00A5E9F6 /* AbstractPoint Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7B8D838E1C7D07E800A5E9F6 /* AbstractPoint.h */,
+			);
+			name = "AbstractPoint Protocol";
+			sourceTree = "<group>";
+		};
+		7BC8C40F1C7E114500EDDFAA /* Shape Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7BC8C40C1C7E114000EDDFAA /* Shape.h */,
+				7BCDE1C71C7F882D004D3D5E /* Quadrilateral.h */,
+			);
+			name = "Shape Protocols";
+			sourceTree = "<group>";
+		};
+		7BC8C4131C7E13B700EDDFAA /* Rectangle Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Rectangle Class";
+			sourceTree = "<group>";
+		};
+		7BC8C41A1C7E1E0D00EDDFAA /* Square Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Square Class";
+			sourceTree = "<group>";
+		};
+		7BC8C41B1C7E1E2900EDDFAA /* Circle Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Circle Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC8C4161C7E1DFF00EDDFAA /* Square.m in Sources */,
+				7BC8C4191C7E1E0700EDDFAA /* Circle.m in Sources */,
+				7BEC48511C778571002EFA4B /* Utilities.m in Sources */,
 				7B744CF81C6E5B100073CDCB /* MyPoint.m in Sources */,
 				7B744CF01C6E5AEA0073CDCB /* main.m in Sources */,
+				7BC8C4121C7E13A700EDDFAA /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +329,7 @@
 				7B744CF51C6E5AEA0073CDCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

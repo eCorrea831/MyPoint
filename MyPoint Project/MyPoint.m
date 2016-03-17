@@ -9,25 +9,43 @@
 #import "MyPoint.h"
 
 @implementation MyPoint
--(void)setX: (double) x {
-    _x = x;
-}
--(void)setY: (double) y {
-    _y = y;
-}
--(double)getX: (double) x {
-    return _x;
-}
--(double)getY: (double) y {
-    return _y;
+
+- (id)init {
+    return [self initWithX:0 andY:0];
 }
 
--(double)moveAlongX: (double) shiftX {
-    _x = _x + shiftX;
-    return _x;
+- (id)initWithX: (double) x andY: (double) y{
+    self = [super init];
+    if (self) {
+        [self setX: x];
+        [self setY: y];
+        
+        return self;
+    }
+    return nil;
 }
--(double)moveAlongY: (double) shiftY {
-    _y = _y + shiftY;
-    return _y;
+
+- (double)moveAlongX: (double)shiftX {
+    self.x = self.x + shiftX;
+    return self.x;
 }
+- (double)moveAlongY: (double)shiftY {
+    self.y = self.y + shiftY;
+    return self.y;
+}
+
+- (double)distanceFromOrigin{
+    MyPoint *origin = [[MyPoint alloc]init];
+    return [self distanceBetweenPoints:origin andY:self];
+}
+
+- (double)distanceFromThisToPoint: (id<AbstractPoint>) point{
+   
+    MyPoint *point2 = point;
+ 
+    return sqrt(((point2.x - self.x) * (point2.x - self.x)) + ((point2.y - self.y) * (point2.y - self.y)));
+
+}
+
+
 @end

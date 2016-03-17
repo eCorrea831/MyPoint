@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AbstractPoint.h"
 
-@interface MyPoint : NSObject {
-    double _x;
-    double _y;
-}
--(void)setX: (double) x;
--(void)setY: (double) y;
--(double)getX: (double) x;
--(double)getY: (double) y;
--(double)moveAlongX: (double) shiftX;
--(double)moveAlongY: (double) shiftY;
+@interface MyPoint : NSObject <AbstractPoint>
+
+@property (nonatomic) double x;
+@property (nonatomic) double y;
+
+- (id)init;
+- (id)initWithX: (double) x andY:(double) y NS_DESIGNATED_INITIALIZER;
+- (double)moveAlongX: (double)shiftX;
+- (double)moveAlongY: (double)shiftY;
 
 @end
